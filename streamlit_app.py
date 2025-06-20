@@ -9,12 +9,11 @@ import requests  # Import the requests library
 from io import StringIO  # To read string as file
 from io import BytesIO
 
-# Cloud storage URL for train.csv (REPLACE WITH YOUR ACTUAL LINK)
-#TRAIN_CSV_URL = "YOUR_PUBLIC_LINK_TO_TRAIN_CSV"
+# Cloud storage URL for train.csv
 TRAIN_CSV_URL = "https://drive.google.com/uc?export=download&id=18JnM4YQl9covb_g43znFSlZOoOmWWCyL"
 
-# Google Drive URL for sarimax model (REPLACE WITH YOUR ACTUAL LINK)
-SARIMAX_MODEL_URL = "https://drive.google.com/uc?export=download&id=1wHJ_NQSfkCGe_KCIUAZB8QMdtcDadOBV"  # Replace with the correct link
+# Google Drive URL for sarimax model
+SARIMAX_MODEL_URL = "https://drive.google.com/uc?export=download&id=1wHJ_NQSfkCGe_KCIUAZB8QMdtcDadOBV"  
 
 # Function to load the SARIMAX model
 @st.cache_resource  # Cache to load only once
